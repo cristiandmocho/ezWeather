@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, viewport-fit=cover"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>ezWeather</title>
+  </head>
+  <body>
+    <ons-page>
+      <ons-toolbar>
+        <ons-icon size="32px" icon="md-cloud"></ons-icon>
+        <p class="right main-title">ezWeather</p>
+      </ons-toolbar>
+
+      <ons-card>
+        <img
+          id="imgMap"
+          src=""
+          alt="Your current location"
+          style="width: 100%; height: 200px"
+        />
+        <div class="weather-title">
+          <h3 id="cityName">...</h3>
+          <img id="imgWeatherIcon" alt="Icon" />
+        </div>
+        <div class="weather-info">
+          <h2 id="temp">...</h2>
+          <p id="feelsLike">...</p>
+        </div>
+        <hr />
+        <div class="content"></div>
+      </ons-card>
+      <ons-list></ons-list>
+      <ons-button id="btnAddCity" modifier="large">Add new city</ons-button>
+    </ons-page>
+
+    <script src="cordova.js"></script>
+    <script src="OnsenUI/js/onsenui.min.js"></script>
+
+    <script src="js/services.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
